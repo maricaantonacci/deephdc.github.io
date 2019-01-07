@@ -14,7 +14,6 @@
 
         <link rel="icon" type="image/png" href="/favicon.ico" />
         
-        <script src="/theme/js/site.js"></script>      
 </head>
 
 <body>
@@ -28,13 +27,21 @@
                 <li class="navbar-item"><a class="navbar-link" href="https://deep-hybrid-datacloud.eu/">Project page</a></li>
                 <li class="navbar-item"><a class="navbar-link" href="https://docs.deep-hybrid-datacloud.eu/">Docs</a></li>
                 <li class="navbar-item">
-                    <a class="navbar-link" href="#" data-popover="#codeNavPopover">Categories</a>
-                    <div id="codeNavPopover" class="popover">
-                      <ul class="popover-list">
-                        <li class="popover-item active">
-                            <a class="popover-link" href="/category/test.html">Test</a></li>
-                      </ul>
+                    <div class="popover-wrapper">
+                        <a class="navbar-link" href="#">Categories</a>
+                        <div class="push popover-content">
+                            <ul class="popover-list">
+                                <li class="popover-item ">
+                                    <a class="popover-link" href="/categories.html">All categories</a>
+                                </li>
+                                <li class="popover-item ">
+                                    <a class="popover-link" href="/category/foo.html">Foo</a></li>
+                                <li class="popover-item active">
+                                    <a class="popover-link" href="/category/test.html">Test</a></li>
+                            </ul>
+                        </div>
                     </div>
+                </li>
             </ul>
         </div>
         <div class="three columns logo">
@@ -43,86 +50,14 @@
     </div>
 </div>
 </nav>    
-
-<section id="header" class="header">
-<div class="container section">
-    <div class="row">
-        <h1><a href="/">DEEP Open Catalog <strong></strong></a></h1>
-        <p>
-        Welcome to the DEEP Open Catalog!
-        </p>
-        <p>
-        DEEP-Hybrid-DataCloud is a project that aims to deliver a framework
-        to easily develop Machine Learning and Deep Learning models on top of
-        e-Infrastructures.
-        In the DEEP Open Catalog you can find ready to use models in a
-        variety of domains. These models can be executed on your local laptop,
-        on a production server or on top of e-Infrastrucutres supporting the DEEP-Hybrid-DataCloud stack.
-        </p>
-    </div>
-</div>
-</section>
-        
-
-<section id="quickstart">
-<div id="quickstart" class="container section">
-    <div class="row">
-        <div class="twelve column">
-            <h2>Quickstart</h2>
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="three columns">
-            <h4>1. Choose a model</h3>
-            Browse the <a href="#model-list">list of available models</a> and pick the one of your choice.
-        </div>
-        <div class="five columns">
-            <h4>2. Download &amp; execute</h3>
-            <pre><code>$ docker search deephdc
-$ docker pull deephdc/deep-oc-generic-container
-$ docker run -ti -p 5000:5000 deephdc/deep-oc-generic-container</code></pre>
-        </div>
-        <div class="four columns">
-            <h4>3. Browse the API</h3>
-            <ul>
-                <li>
-                    Open your browser and visit <code>http://127.0.0.1:5000/</code>.
-                </li>
-                <li>Read the Swagger documentation and test the model directly.</li>
-            </ul>
-        </div>
-    </div>
-</div>
-</section>
-
 <section id="model-list">
 <div class="container section">
     <div class="row">
-<h2>Articles in the Test category</h2>
+        <h2>Models in the 'Test' category</h2>
     </div>
 
     <div class="row">
         <ul class="model-list">
-            <li class="six columns">
-                <article class="hentry">
-                    <header>
-                        <h3 class="entry-title"><a href="/deep-plant-classification-theano-4.html" rel="bookmark" title="Permalink to DEEP Plant Classification Theano 4">DEEP Plant Classification Theano 4</a></h3>
-                    </header>
-                    <footer class="post-info">
-                        <!--                         <time class="published" datetime="2018-07-03T10:20:00+02:00"> mar 03 julio 2018 </time> -->
-                        <address class="vcard author">By
-                            <a class="url fn" href="/author/deep-hybrid-datacloud-consortium.html">DEEP-Hybrid-DataCloud Consortium</a>
-                        </address>
-                    </footer><!-- /.post-info -->
-                    <div class="entry-content"> 
-                        <p>
-                        <p>A trained Convolutional Neural network optimized for plant identification using images. The architecture used is a Resnet50 [5] using Lasagne on top of Theano.</p> 
-                        </p>
-                        <a href="/deep-plant-classification-theano-4.html">Know more &raquo;&raquo;</a>
-                    </div><!-- /.entry-content -->
-                </article>
-            </li>
             <li class="six columns">
                 <article class="hentry">
                     <header>
@@ -143,6 +78,8 @@ $ docker run -ti -p 5000:5000 deephdc/deep-oc-generic-container</code></pre>
                 </article>
             </li>
         </ul>
+    </div>
+    <div class="row">
 <p class="paginator">
         <a href="/category/test.html#model-list">&laquo;</a>
     Page 2 / 2

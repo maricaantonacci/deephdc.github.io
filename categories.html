@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <title>DEEP Open Catalog</title>
+        <title>DEEP Open Catalog - Model categories</title>
         <meta charset="utf-8" />
         <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="DEEP Open Catalog Full Atom Feed" />
 
@@ -13,7 +13,6 @@
 
         <link rel="icon" type="image/png" href="/favicon.ico" />
         
-        <script src="/theme/js/site.js"></script>      
 </head>
 
 <body>
@@ -27,13 +26,21 @@
                 <li class="navbar-item"><a class="navbar-link" href="https://deep-hybrid-datacloud.eu/">Project page</a></li>
                 <li class="navbar-item"><a class="navbar-link" href="https://docs.deep-hybrid-datacloud.eu/">Docs</a></li>
                 <li class="navbar-item">
-                    <a class="navbar-link" href="#" data-popover="#codeNavPopover">Categories</a>
-                    <div id="codeNavPopover" class="popover">
-                      <ul class="popover-list">
-                        <li class="popover-item ">
-                            <a class="popover-link" href="/category/test.html">Test</a></li>
-                      </ul>
+                    <div class="popover-wrapper">
+                        <a class="navbar-link" href="#">Categories</a>
+                        <div class="push popover-content">
+                            <ul class="popover-list">
+                                <li class="popover-item active">
+                                    <a class="popover-link" href="/categories.html">All categories</a>
+                                </li>
+                                <li class="popover-item ">
+                                    <a class="popover-link" href="/category/foo.html">Foo</a></li>
+                                <li class="popover-item ">
+                                    <a class="popover-link" href="/category/test.html">Test</a></li>
+                            </ul>
+                        </div>
                     </div>
+                </li>
             </ul>
         </div>
         <div class="three columns logo">
@@ -42,9 +49,21 @@
     </div>
 </div>
 </nav>    
-<ul>
-    <li><a href="/category/test.html">Test</a></li>
-</ul>
+<section id="categories">
+<div class="container section">
+    <div class="row">
+        <div class="twelve column">
+            <h2>Model Categories</h2>
+        </div>
+    </div>
+    <div class="row">
+        <ul>
+            <li><a href="/category/foo.html">Foo</a></li>
+            <li><a href="/category/test.html">Test</a></li>
+        </ul>
+    </div>
+</div>
+</section>
         
 <footer id="contentinfo" class="body">
     <div class="footer">

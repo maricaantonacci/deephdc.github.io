@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-          <title>DEEP Open Catalog - Model "DEEP Generic Container"</title>
+          <title>DEEP Open Catalog - Model "DEEP OC Plant Classification (Theano)"</title>
         <meta charset="utf-8" />
         <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="DEEP Open Catalog Full Atom Feed" />
-        <link href="/feeds/test-modules.atom.xml" type="application/atom+xml" rel="alternate" title="DEEP Open Catalog Categories Atom Feed" />
+        <link href="/feeds/models/toy.atom.xml" type="application/atom+xml" rel="alternate" title="DEEP Open Catalog Categories Atom Feed" />
 
         <link rel="stylesheet" type="text/css" href="/theme/css/normalize.css" />
         <link rel="stylesheet" type="text/css" href="/theme/css/skeleton.css" />
@@ -49,9 +49,9 @@
                                     <a class="popover-link" href="/category/library/theano.html">library/theano</a></li>
                                 <li class="popover-item ">
                                     <a class="popover-link" href="/category/models.html">models</a></li>
-                                <li class="popover-item ">
-                                    <a class="popover-link" href="/category/models/toy.html">models/toy</a></li>
                                 <li class="popover-item active">
+                                    <a class="popover-link" href="/category/models/toy.html">models/toy</a></li>
+                                <li class="popover-item ">
                                     <a class="popover-link" href="/category/test-modules.html">test modules</a></li>
                             </ul>
                         </div>
@@ -69,11 +69,11 @@
 <div class="container model-entry">
     <div class="header">
         <div class="row">
-            <h2 class="entry-title" >DEEP Generic Container</h2>
+            <h2 class="entry-title" >DEEP OC Plant Classification (Theano)</h2>
              
         </div>
         <div class="row">
-            <a class="button" href="https://github.com/indigo-dc/DEEP-OC-generic-container">Get this model</a>
+            <a class="button" href="https://github.com/indigo-dc/DEEP-OC-plant-classification-theano">Get this model</a>
         </div>
         <div class="row">
                 By
@@ -84,16 +84,40 @@
             </time>
  |
             <span class="fas fa-folder"></span>
-                <a href="/category/test-modules.html">test modules</a>, 
+                <a href="/category/models/toy.html">models/toy</a>, 
+                <a href="/category/library/theano.html">library/theano</a>, 
+                <a href="/category/library/lasagne.html">library/lasagne</a>, 
                 <a href="/category/docker.html">docker</a>
         </div>
     </div>
     <div class="content">
         <div class="row">
-            <p>The DEEP-OC-generic-container model provides no functionality, as it is rather
-a boilerplate repository that can serve as an example.</p>
-<p>It provides a Dockerfile template allowing to run several DEEP applications in
-the same Docker container.</p>
+            <p><a href="https://jenkins.indigo-datacloud.eu:8080/job/Pipeline-as-code/job/DEEP-OC-org/job/DEEP-OC-plant-classification-theano/job/master"><img alt="Build Status" src="https://jenkins.indigo-datacloud.eu:8080/buildStatus/icon?job=Pipeline-as-code/DEEP-OC-org/DEEP-OC-plant-classification-theano/master"></a></p>
+<p>The deep learning revolution has brought significant advances in a number of
+fields [1], primarily linked to image and speech recognition. The
+standardization of image classification tasks like the ImageNet Large Scale
+Visual Recognition Challenge [2] has resulted in a reliable way to compare top
+performing architectures.</p>
+<p>The use of deep learning for plant classification is not novel [3, 4] but has
+mainly focused in leaves and has been restricted to a limited amount of
+species, therefore making it of limited use for large-scale biodiversity
+monitoring purposes.</p>
+<p>This Docker container contains a trained Convolutional Neural network optimized
+for plant identification using images. The architecture used is a Resnet50 [5]
+using Lasagne on top of Theano.</p>
+<p>As training dataset it has been used the great collection of images which are
+available in PlantNet under a Creative-Common AttributionShareAlike 2.0
+license. It consists of around 250K images belonging to more than 6K plant
+species of Western Europe. These species are distributed in 1500 genera and 200
+families.</p>
+<p>A detailed article about this network and the results obtained with it can be found in [6].</p>
+<h2>References:</h2>
+<p>[1]: Yann LeCun, Yoshua Bengio, and Geofrey Hinton. Deep learning. Nature, 521(7553):436–444, may 2015.</p>
+<p>[2]: Olga Russakovsky et al. ImageNet Large Scale Visual Recognition Challenge. International Journal of Computer Vision (IJCV), 115(3):211–252, 2015.</p>
+<p>[3]: Sue Han Lee, Chee Seng Chan, Paul Wilkin, and Paolo Remagnino. Deep-plant: Plant identification with convolutional neural networks, 2015.</p>
+<p>[4]: Mads Dyrmann, Henrik Karstoft, and Henrik Skov Midtiby. Plant species classification using deep convolutional neural network. Biosystems Engineering, 151:72–80, 2016.</p>
+<p>[5]: He, K., Zhang, X., Ren, S., &amp; Sun, J. (2016). Deep residual learning for image recognition. In Proceedings of the IEEE conference on computer vision and pattern recognition (pp. 770-778)</p>
+<p>[6]: Heredia, Ignacio. "Large-scale plant classification with deep neural networks." Proceedings of the Computing Frontiers Conference. ACM, 2017.</p>
         </div>
     </div>
 </div>

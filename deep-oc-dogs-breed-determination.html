@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-          <title>DEEP Open Catalog</title>
+          <title>DEEP Open Catalog - Model "DEEP OC dogs breed determination"</title>
         <meta charset="utf-8" />
         <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="DEEP Open Catalog Full Atom Feed" />
-        <link href="/feeds/test.atom.xml" type="application/atom+xml" rel="alternate" title="DEEP Open Catalog Categories Atom Feed" />
+        <link href="/feeds/models/toy.atom.xml" type="application/atom+xml" rel="alternate" title="DEEP Open Catalog Categories Atom Feed" />
 
         <link rel="stylesheet" type="text/css" href="/theme/css/normalize.css" />
         <link rel="stylesheet" type="text/css" href="/theme/css/skeleton.css" />
@@ -38,9 +38,21 @@
                                     <a class="popover-link" href="/categories.html">All categories</a>
                                 </li>
                                 <li class="popover-item ">
-                                    <a class="popover-link" href="/category/foo.html">Foo</a></li>
+                                    <a class="popover-link" href="/category/docker.html">docker</a></li>
+                                <li class="popover-item ">
+                                    <a class="popover-link" href="/category/library.html">library</a></li>
+                                <li class="popover-item ">
+                                    <a class="popover-link" href="/category/library/lasagne.html">library/lasagne</a></li>
+                                <li class="popover-item ">
+                                    <a class="popover-link" href="/category/library/tensorflow.html">library/tensorflow</a></li>
+                                <li class="popover-item ">
+                                    <a class="popover-link" href="/category/library/theano.html">library/theano</a></li>
+                                <li class="popover-item ">
+                                    <a class="popover-link" href="/category/models.html">models</a></li>
                                 <li class="popover-item active">
-                                    <a class="popover-link" href="/category/test.html">Test</a></li>
+                                    <a class="popover-link" href="/category/models/toy.html">models/toy</a></li>
+                                <li class="popover-item ">
+                                    <a class="popover-link" href="/category/test-modules.html">test modules</a></li>
                             </ul>
                         </div>
                     </div>
@@ -53,26 +65,39 @@
     </div>
 </div>
 </nav>    
-<section id="content" class="body">
+<section id="model-entry">
 <div class="container model-entry">
-    <header>
-        <h2 class="entry-title">
-      <a href="/deep-plant-classification-theano-3.html" rel="bookmark"
-         title="Permalink to DEEP Plant Classification Theano 3">DEEP Plant Classification Theano 3</a></h2>
- 
-    </header>
-    <footer class="post-info">
-        <time class="published" datetime="2018-07-03T10:20:00+02:00">
-            mar 03 julio 2018
-        </time>
-        <address class="vcard author">
-            By
-            <a class="url fn" href="/author/deep-hybrid-datacloud-consortium.html">DEEP-Hybrid-DataCloud Consortium</a>
-        </address>
-    </footer><!-- /.post-info -->
-    <div class="entry-content">
-        <p>A trained Convolutional Neural network optimized for plant identification using images. The architecture used is a Resnet50 [5] using Lasagne on top of Theano.</p>
-    </div><!-- /.entry-content -->
+    <div class="header">
+        <div class="row">
+            <h2 class="entry-title" >DEEP OC dogs breed determination</h2>
+             
+        </div>
+        <div class="row">
+            <a class="button" href="https://github.com/indigo-dc/DEEP-OC-dogs_breed_det">Get this model</a>
+        </div>
+        <div class="row">
+                By
+<!--                    <a class="url fn" href="/author/deep-hybrid-datacloud-consortium.html">DEEP-Hybrid-DataCloud Consortium</a> -->
+                    DEEP-Hybrid-DataCloud Consortium
+            |             Created: <time class="published" datetime="2018-07-03T10:20:00+02:00">
+                mar 03 julio 2018
+            </time>
+ |
+            <span class="fas fa-folder"></span>
+                <a href="/category/models/toy.html">models/toy</a>, 
+                <a href="/category/library/tensorflow.html">library/tensorflow</a>, 
+                <a href="/category/docker.html">docker</a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="row">
+            <p><a href="https://jenkins.indigo-datacloud.eu:8080/job/Pipeline-as-code/job/DEEP-OC-org/job/dogs_breed_det/job/master/"><img alt="Build Status" src="https://jenkins.indigo-datacloud.eu:8080/buildStatus/icon?job=Pipeline-as-code/DEEP-OC-org/dogs_breed_det/master"></a></p>
+<p>A toy example to identify Dog's breed, "Dogs breed detector", as example for <a href="https://github.com/indigo-dc/DEEPaaS">DEEPaaS API</a>.</p>
+<p>Dogs breed detector is originally forked from <a href="https://github.com/udacity/dog-project">udacity/dogs-project</a>, dataset comes from <a href="https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip">dog dataset</a>.</p>
+<p>The project applies Transfer learning for dog's breed identification, implemented with Tensorflow and Keras:</p>
+<p>From a pre-trained model (VGG16 | VGG19 | Resnet50 | InceptionV3 | Xception) the last layer is removed, then a new FC classification layer is added, which is trained. All images first pass through the pre-trained network and converted into the tensor with the shape of the 'before-last' layer of the pre-trained network, into so-called 'bottleneck_features'. These bottleneck_features are used then as input for the FC classification network.</p>
+        </div>
+    </div>
 </div>
 </section>
         

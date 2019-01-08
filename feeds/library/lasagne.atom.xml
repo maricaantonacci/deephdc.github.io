@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>DEEP Open Catalog - library/lasagne</title><link href="/" rel="alternate"></link><link href="/feeds/library/lasagne.atom.xml" rel="self"></link><id>/</id><updated>2018-12-21T00:00:00+01:00</updated><entry><title>DEEP OC Conus Classification (Theano)</title><link href="/models/deep-oc-conus-classification-theano.html" rel="alternate"></link><published>2018-07-03T10:20:00+02:00</published><updated>2018-12-21T00:00:00+01:00</updated><author><name>DEEP-Hybrid-DataCloud Consortium</name></author><id>tag:None,2018-07-03:/models/deep-oc-conus-classification-theano.html</id><summary type="html">&lt;p&gt;A trained ResNet50 on Theano to classify conus marine snails.&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://jenkins.indigo-datacloud.eu:8080/job/Pipeline-as-code/job/DEEP-OC-org/job/DEEP-OC-conus-classification/job/master"&gt;&lt;img alt="Build Status" src="https://jenkins.indigo-datacloud.eu:8080/buildStatus/icon?job=Pipeline-as-code/DEEP-OC-org/DEEP-OC-plant-classification-theano/master"&gt;&lt;/a&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>DEEP Open Catalog - library/lasagne</title><link href="/" rel="alternate"></link><link href="/feeds/library/lasagne.atom.xml" rel="self"></link><id>/</id><updated>2018-12-21T00:00:00+01:00</updated><entry><title>DEEP OC Seed Classification (Theano)</title><link href="/models/deep-oc-seed-classification-theano.html" rel="alternate"></link><published>2018-09-16T00:00:00+02:00</published><updated>2018-09-16T00:00:00+02:00</updated><author><name>DEEP-Hybrid-DataCloud Consortium</name></author><id>tag:None,2018-09-16:/models/deep-oc-seed-classification-theano.html</id><summary type="html">&lt;p&gt;A trained ResNet50 on Theano to seeds.&lt;/p&gt;</summary><content type="html">&lt;p&gt;The deep learning revolution has brought significant advances in a number of
+fields [1], primarily linked to image and speech recognition. The
+standardization of image classification tasks like the &lt;a href="http://www.image-net.org/challenges/LSVRC/"&gt;ImageNet Large Scale
+Visual Recognition Challenge&lt;/a&gt; [2]
+has resulted in a reliable way to compare top performing architectures.&lt;/p&gt;
+&lt;p&gt;This Docker container contains a trained Convolutional Neural network optimized
+for seed identification using images. The architecture used is a Resnet50 [5]
+using Lasagne on top of Theano.&lt;/p&gt;
+&lt;p&gt;As training dataset it has been used a collection of images from the 
+&lt;a href="http://www.rjb.csic.es"&gt;Royal Botanical Garden&lt;/a&gt; of Spain. It consists of around
+28K images from 743 species and 493 genera.&lt;/p&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;p&gt;[1]: Yann LeCun, Yoshua Bengio, and Geofrey Hinton. &lt;a href="https://www.cs.toronto.edu/~hinton/absps/NatureDeepReview.pdf"&gt;Deep learning&lt;/a&gt;. Nature, 521(7553):436–444, may 2015.&lt;/p&gt;
+&lt;p&gt;[2]: Olga Russakovsky et al. &lt;a href="https://arxiv.org/abs/1409.0575"&gt;ImageNet Large Scale Visual Recognition Challenge&lt;/a&gt;. International Journal of Computer Vision (IJCV), 115(3):211–252, 2015.&lt;/p&gt;</content></entry><entry><title>DEEP OC Phytopankton (Theano)</title><link href="/models/deep-oc-phytopankton-theano.html" rel="alternate"></link><published>2018-09-05T00:00:00+02:00</published><updated>2018-09-05T00:00:00+02:00</updated><author><name>DEEP-Hybrid-DataCloud Consortium</name></author><id>tag:None,2018-09-05:/models/deep-oc-phytopankton-theano.html</id><summary type="html">&lt;p&gt;A trained ResNet50 on Theano to classify phytoplankton species.&lt;/p&gt;</summary><content type="html">&lt;p&gt;The deep learning revolution has brought significant advances in a number of
+fields [1], primarily linked to image and speech recognition. The
+standardization of image classification tasks like the &lt;a href="http://www.image-net.org/challenges/LSVRC/"&gt;ImageNet Large Scale
+Visual Recognition Challenge&lt;/a&gt; [2]
+has resulted in a reliable way to compare top performing architectures.&lt;/p&gt;
+&lt;p&gt;This Docker container contains a trained Convolutional Neural network optimized
+for phytoplankton species identification using images. The architecture used is a Resnet50 [5]
+using Lasagne on top of Theano.&lt;/p&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;p&gt;[1]: Yann LeCun, Yoshua Bengio, and Geofrey Hinton. &lt;a href="https://www.cs.toronto.edu/~hinton/absps/NatureDeepReview.pdf"&gt;Deep learning&lt;/a&gt;. Nature, 521(7553):436–444, may 2015.&lt;/p&gt;
+&lt;p&gt;[2]: Olga Russakovsky et al. &lt;a href="https://arxiv.org/abs/1409.0575"&gt;ImageNet Large Scale Visual Recognition Challenge&lt;/a&gt;. International Journal of Computer Vision (IJCV), 115(3):211–252, 2015.&lt;/p&gt;</content></entry><entry><title>DEEP OC Conus Classification (Theano)</title><link href="/models/deep-oc-conus-classification-theano.html" rel="alternate"></link><published>2018-07-03T10:20:00+02:00</published><updated>2018-12-21T00:00:00+01:00</updated><author><name>DEEP-Hybrid-DataCloud Consortium</name></author><id>tag:None,2018-07-03:/models/deep-oc-conus-classification-theano.html</id><summary type="html">&lt;p&gt;A trained ResNet50 on Theano to classify conus marine snails.&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://jenkins.indigo-datacloud.eu:8080/job/Pipeline-as-code/job/DEEP-OC-org/job/DEEP-OC-conus-classification/job/master"&gt;&lt;img alt="Build Status" src="https://jenkins.indigo-datacloud.eu:8080/buildStatus/icon?job=Pipeline-as-code/DEEP-OC-org/DEEP-OC-plant-classification-theano/master"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Citizen science has become a powerful force for scientific inquiry, providing researchers with access to a vast array of data points while connecting non scientists to the real process of science. This citizen-researcher relationship creates a very interesting synergy, allowing for the creation, execution, and analysis of research projects. With this in mind, a Convolutional Neural Network using ResNet50 has been trained to identify conus marine snails at species level [1] in collaboration with the Museo de Ciencias Naturales in Madrid &lt;a href="http://www.mncn.csic.es/"&gt;2&lt;/a&gt;.
 The taxonomy of these snails has changed significantly several times during recent years and the introduction of Deep Learning techniques allowing to classify them is a very valuable tool for the experts.This Docker container contains a trained Convolutional Neural network optimized for conus snails identification using images. The architecture used is a Resnet50 [3] using Lasagne on top of Theano. The training dataset has been provided by the Museo de Ciencias Naturales de Madrid and it consists on a dataset containing images of 68 species of conus covering three different regions: Panamic region South African region Western atlantic and mediterranean region.&lt;/p&gt;
 &lt;h2&gt;References:&lt;/h2&gt;
@@ -7,9 +30,9 @@ The taxonomy of these snails has changed significantly several times during rece
 &lt;p&gt;[3]: He, K., Zhang, X., Ren, S., &amp;amp; Sun, J. (2016). Deep residual learning for image recognition. In Proceedings of the IEEE conference on computer vision and pattern recognition (pp. 770-778)&lt;/p&gt;</content></entry><entry><title>DEEP OC Plant Classification (Theano)</title><link href="/models/deep-oc-plant-classification-theano.html" rel="alternate"></link><published>2018-07-03T10:20:00+02:00</published><updated>2018-12-21T00:00:00+01:00</updated><author><name>DEEP-Hybrid-DataCloud Consortium</name></author><id>tag:None,2018-07-03:/models/deep-oc-plant-classification-theano.html</id><summary type="html">&lt;p&gt;A trained ResNet50 on Theano to classify European plants.&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://jenkins.indigo-datacloud.eu:8080/job/Pipeline-as-code/job/DEEP-OC-org/job/DEEP-OC-plant-classification-theano/job/master"&gt;&lt;img alt="Build Status" src="https://jenkins.indigo-datacloud.eu:8080/buildStatus/icon?job=Pipeline-as-code/DEEP-OC-org/DEEP-OC-plant-classification-theano/master"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The deep learning revolution has brought significant advances in a number of
 fields [1], primarily linked to image and speech recognition. The
-standardization of image classification tasks like the ImageNet Large Scale
-Visual Recognition Challenge [2] has resulted in a reliable way to compare top
-performing architectures.&lt;/p&gt;
+standardization of image classification tasks like the &lt;a href="http://www.image-net.org/challenges/LSVRC/"&gt;ImageNet Large Scale
+Visual Recognition Challenge&lt;/a&gt; [2]
+has resulted in a reliable way to compare top performing architectures.&lt;/p&gt;
 &lt;p&gt;The use of deep learning for plant classification is not novel [3, 4] but has
 mainly focused in leaves and has been restricted to a limited amount of
 species, therefore making it of limited use for large-scale biodiversity
@@ -23,10 +46,10 @@ license. It consists of around 250K images belonging to more than 6K plant
 species of Western Europe. These species are distributed in 1500 genera and 200
 families.&lt;/p&gt;
 &lt;p&gt;A detailed article about this network and the results obtained with it can be found in [6].&lt;/p&gt;
-&lt;h2&gt;References:&lt;/h2&gt;
-&lt;p&gt;[1]: Yann LeCun, Yoshua Bengio, and Geofrey Hinton. Deep learning. Nature, 521(7553):436–444, may 2015.&lt;/p&gt;
-&lt;p&gt;[2]: Olga Russakovsky et al. ImageNet Large Scale Visual Recognition Challenge. International Journal of Computer Vision (IJCV), 115(3):211–252, 2015.&lt;/p&gt;
-&lt;p&gt;[3]: Sue Han Lee, Chee Seng Chan, Paul Wilkin, and Paolo Remagnino. Deep-plant: Plant identification with convolutional neural networks, 2015.&lt;/p&gt;
-&lt;p&gt;[4]: Mads Dyrmann, Henrik Karstoft, and Henrik Skov Midtiby. Plant species classification using deep convolutional neural network. Biosystems Engineering, 151:72–80, 2016.&lt;/p&gt;
-&lt;p&gt;[5]: He, K., Zhang, X., Ren, S., &amp;amp; Sun, J. (2016). Deep residual learning for image recognition. In Proceedings of the IEEE conference on computer vision and pattern recognition (pp. 770-778)&lt;/p&gt;
-&lt;p&gt;[6]: Heredia, Ignacio. "Large-scale plant classification with deep neural networks." Proceedings of the Computing Frontiers Conference. ACM, 2017.&lt;/p&gt;</content></entry></feed>
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;p&gt;[1]: Yann LeCun, Yoshua Bengio, and Geofrey Hinton. &lt;a href="https://www.cs.toronto.edu/~hinton/absps/NatureDeepReview.pdf"&gt;Deep learning&lt;/a&gt;. Nature, 521(7553):436–444, may 2015.&lt;/p&gt;
+&lt;p&gt;[2]: Olga Russakovsky et al. &lt;a href="https://arxiv.org/abs/1409.0575"&gt;ImageNet Large Scale Visual Recognition Challenge&lt;/a&gt;. International Journal of Computer Vision (IJCV), 115(3):211–252, 2015.&lt;/p&gt;
+&lt;p&gt;[3]: Sue Han Lee, Chee Seng Chan, Paul Wilkin, and Paolo Remagnino. &lt;a href="https://arxiv.org/abs/1506.08425"&gt;Deep-plant: Plant identification with convolutional neural networks&lt;/a&gt;, 2015.&lt;/p&gt;
+&lt;p&gt;[4]: Mads Dyrmann, Henrik Karstoft, and Henrik Skov Midtiby. &lt;a href="https://www.sciencedirect.com/science/article/pii/S1537511016301465"&gt;Plant species classification using deep convolutional neural network.&lt;/a&gt; Biosystems Engineering, 151:72–80, 2016.&lt;/p&gt;
+&lt;p&gt;[5]: He, K., Zhang, X., Ren, S., &amp;amp; Sun, J. (2016). &lt;a href="https://arxiv.org/abs/1512.03385"&gt;Deep residual learning for image recognition.&lt;/a&gt; In Proceedings of the IEEE conference on computer vision and pattern recognition (pp. 770-778)&lt;/p&gt;
+&lt;p&gt;[6]: Heredia, Ignacio. &lt;a href="https://arxiv.org/abs/1706.03736"&gt;Large-scale plant classification with deep neural networks.&lt;/a&gt; Proceedings of the Computing Frontiers Conference. ACM, 2017.&lt;/p&gt;</content></entry></feed>

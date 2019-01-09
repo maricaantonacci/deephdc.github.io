@@ -105,11 +105,59 @@
     </div>
     <div class="content">
         <div class="row">
-            <p><a href="https://jenkins.indigo-datacloud.eu:8080/job/Pipeline-as-code/job/DEEP-OC-org/job/dogs_breed_det/job/master/"><img alt="Build Status" src="https://jenkins.indigo-datacloud.eu:8080/buildStatus/icon?job=Pipeline-as-code/DEEP-OC-org/dogs_breed_det/master"></a></p>
+            <div class="seven  columns">
+                <p><a href="https://jenkins.indigo-datacloud.eu:8080/job/Pipeline-as-code/job/DEEP-OC-org/job/dogs_breed_det/job/master/"><img alt="Build Status" src="https://jenkins.indigo-datacloud.eu:8080/buildStatus/icon?job=Pipeline-as-code/DEEP-OC-org/dogs_breed_det/master"></a></p>
 <p>A toy example to identify Dog's breed, "Dogs breed detector", as example for <a href="https://github.com/indigo-dc/DEEPaaS">DEEPaaS API</a>.</p>
 <p>Dogs breed detector is originally forked from <a href="https://github.com/udacity/dog-project">udacity/dogs-project</a>, dataset comes from <a href="https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip">dog dataset</a>.</p>
 <p>The project applies Transfer learning for dog's breed identification, implemented with Tensorflow and Keras:</p>
 <p>From a pre-trained model (VGG16 | VGG19 | Resnet50 | InceptionV3 | Xception) the last layer is removed, then a new FC classification layer is added, which is trained. All images first pass through the pre-trained network and converted into the tensor with the shape of the 'before-last' layer of the pre-trained network, into so-called 'bottleneck_features'. These bottleneck_features are used then as input for the FC classification network.</p>
+            </div>
+            <div class="five columns">
+<div class="row run">
+    <h3>Run locally on your computer</h3>
+    <p>
+		You can run this model directly on your computer, assuming that you
+		have <a title="Docker documentation" href="https://docs.docker.com/">Docker</a>
+		installed, by following these steps:
+    </p>
+    <pre><code>docker pull deephdc/deep-oc-dogs_breed_det
+docker run -ti -p 5000:5000 deephdc/deep-oc-dogs_breed_det</code></pre>
+ 
+    <p>
+        Once running, point your browser to <code>http://127.0.0.1:5000/</code>
+        and you will see the API documentation, where you can test the model
+        functionality, as well as perform other actions (such as training).
+    </p>
+    <p>
+        For more information, refer to the 
+        <a href="https://docs.deep-hybrid-datacloud.eu/en/latest/user/index.html"
+           title="DEEP user documentation">user documentation</a>.
+    </p>
+</div>
+<div class="row run">
+    <h3>Run on our pilot e-Infrastructure</h3>
+    <p>
+        In order to execute this model in our pilot e-Infrastructure you would
+        need to be registered in the 
+        <a href="https://iam.deep-hybrid-datacloud.eu/"
+           title="DEEP Identity and Access Management">DEEP IAM</a>.
+    </p>
+    <h4>Mesos (GPU)</h4>
+    <pre><code>curl -o deep-oc-dogs-breed-determination.tosca \
+    https://raw.githubusercontent.com/indigo-dc/tosca-templates/master/deep-oc/deep-oc-dogs_breed-mesos-gpu.yml
+orchent deep-oc-dogs-breed-determination.tosca ...</code></pre>
+    <h4>Mesos (CPU)</h4>
+    <pre><code>curl -o deep-oc-dogs-breed-determination.tosca \
+    https://raw.githubusercontent.com/indigo-dc/tosca-templates/master/deep-oc/deep-oc-dogs_breed-mesos-cpu.yml
+orchent deep-oc-dogs-breed-determination.tosca ...</code></pre>
+    <p>Once running...</p>
+    <p>
+        For more information, refer to the 
+        <a href="https://docs.deep-hybrid-datacloud.eu/en/latest/user/index.html"
+           title="DEEP user documentation">user documentation</a>.
+    </p>
+</div>
+            </div>
         </div>
     </div>
 </div>

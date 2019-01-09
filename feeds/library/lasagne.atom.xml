@@ -7,7 +7,7 @@ has resulted in a reliable way to compare top performing architectures.&lt;/p&gt
 &lt;p&gt;This Docker container contains a trained Convolutional Neural network optimized
 for seed identification using images. The architecture used is a Resnet50 [5]
 using Lasagne on top of Theano.&lt;/p&gt;
-&lt;p&gt;As training dataset it has been used a collection of images from the 
+&lt;p&gt;As training dataset it has been used a collection of images from the
 &lt;a href="http://www.rjb.csic.es"&gt;Royal Botanical Garden&lt;/a&gt; of Spain. It consists of around
 28K images from 743 species and 493 genera.&lt;/p&gt;
 &lt;h3&gt;References&lt;/h3&gt;

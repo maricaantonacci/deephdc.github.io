@@ -105,10 +105,35 @@
     </div>
     <div class="content">
         <div class="row">
-            <p>The DEEP-OC-generic-container model provides no functionality, as it is rather
+            <div class="seven  columns">
+                <p>The DEEP-OC-generic-container model provides no functionality, as it is rather
 a boilerplate repository that can serve as an example.</p>
 <p>It provides a Dockerfile template allowing to run several DEEP applications in
 the same Docker container.</p>
+            </div>
+            <div class="five columns">
+<div class="row run">
+    <h3>Run locally on your computer</h3>
+    <p>
+		You can run this model directly on your computer, assuming that you
+		have <a title="Docker documentation" href="https://docs.docker.com/">Docker</a>
+		installed, by following these steps:
+    </p>
+    <pre><code>docker pull deephdc/deep-oc-generic-container
+docker run -ti -p 5000:5000 deephdc/deep-oc-generic-container</code></pre>
+ 
+    <p>
+        Once running, point your browser to <code>http://127.0.0.1:5000/</code>
+        and you will see the API documentation, where you can test the model
+        functionality, as well as perform other actions (such as training).
+    </p>
+    <p>
+        For more information, refer to the 
+        <a href="https://docs.deep-hybrid-datacloud.eu/en/latest/user/index.html"
+           title="DEEP user documentation">user documentation</a>.
+    </p>
+</div>
+            </div>
         </div>
     </div>
 </div>

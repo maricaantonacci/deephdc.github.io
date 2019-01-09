@@ -101,7 +101,51 @@
     </div>
     <div class="content">
         <div class="row">
-            <p><a href="https://jenkins.indigo-datacloud.eu:8080/job/Pipeline-as-code/job/DEEP-OC-org/job/DEEP-OC-mods/job/master"><img alt="Build Status" src="https://jenkins.indigo-datacloud.eu:8080/buildStatus/icon?job=Pipeline-as-code/DEEP-OC-org/DEEP-OC-mods/master"></a></p>
+            <div class="seven  columns">
+                <p><a href="https://jenkins.indigo-datacloud.eu:8080/job/Pipeline-as-code/job/DEEP-OC-org/job/DEEP-OC-mods/job/master"><img alt="Build Status" src="https://jenkins.indigo-datacloud.eu:8080/buildStatus/icon?job=Pipeline-as-code/DEEP-OC-org/DEEP-OC-mods/master"></a></p>
+            </div>
+            <div class="five columns">
+<div class="row run">
+    <h3>Run locally on your computer</h3>
+    <p>
+		You can run this model directly on your computer, assuming that you
+		have <a title="Docker documentation" href="https://docs.docker.com/">Docker</a>
+		installed, by following these steps:
+    </p>
+    <pre><code>docker pull deephdc/deep-oc-mods
+docker run -ti -p 5000:5000 deephdc/deep-oc-mods</code></pre>
+ 
+    <p>
+        Once running, point your browser to <code>http://127.0.0.1:5000/</code>
+        and you will see the API documentation, where you can test the model
+        functionality, as well as perform other actions (such as training).
+    </p>
+    <p>
+        For more information, refer to the 
+        <a href="https://docs.deep-hybrid-datacloud.eu/en/latest/user/index.html"
+           title="DEEP user documentation">user documentation</a>.
+    </p>
+</div>
+<div class="row run">
+    <h3>Run on our pilot e-Infrastructure</h3>
+    <p>
+        In order to execute this model in our pilot e-Infrastructure you would
+        need to be registered in the 
+        <a href="https://iam.deep-hybrid-datacloud.eu/"
+           title="DEEP Identity and Access Management">DEEP IAM</a>.
+    </p>
+    <h4>Mesos (CPU)</h4>
+    <pre><code>curl -o deep-oc-massive-online-data-streams.tosca \
+    https://raw.githubusercontent.com/indigo-dc/tosca-templates/master/deep-oc/deep-oc-mods-mesos-cpu.yml
+orchent deep-oc-massive-online-data-streams.tosca ...</code></pre>
+    <p>Once running...</p>
+    <p>
+        For more information, refer to the 
+        <a href="https://docs.deep-hybrid-datacloud.eu/en/latest/user/index.html"
+           title="DEEP user documentation">user documentation</a>.
+    </p>
+</div>
+            </div>
         </div>
     </div>
 </div>

@@ -107,7 +107,8 @@
     </div>
     <div class="content">
         <div class="row">
-            <p><a href="https://jenkins.indigo-datacloud.eu:8080/job/Pipeline-as-code/job/DEEP-OC-org/job/DEEP-OC-plant-classification-theano/job/master"><img alt="Build Status" src="https://jenkins.indigo-datacloud.eu:8080/buildStatus/icon?job=Pipeline-as-code/DEEP-OC-org/DEEP-OC-plant-classification-theano/master"></a></p>
+            <div class="seven  columns">
+                <p><a href="https://jenkins.indigo-datacloud.eu:8080/job/Pipeline-as-code/job/DEEP-OC-org/job/DEEP-OC-plant-classification-theano/job/master"><img alt="Build Status" src="https://jenkins.indigo-datacloud.eu:8080/buildStatus/icon?job=Pipeline-as-code/DEEP-OC-org/DEEP-OC-plant-classification-theano/master"></a></p>
 <p>The deep learning revolution has brought significant advances in a number of
 fields [1], primarily linked to image and speech recognition. The
 standardization of image classification tasks like the <a href="http://www.image-net.org/challenges/LSVRC/">ImageNet Large Scale
@@ -133,6 +134,49 @@ families.</p>
 <p>[4]: Mads Dyrmann, Henrik Karstoft, and Henrik Skov Midtiby. <a href="https://www.sciencedirect.com/science/article/pii/S1537511016301465">Plant species classification using deep convolutional neural network.</a> Biosystems Engineering, 151:72–80, 2016.</p>
 <p>[5]: He, K., Zhang, X., Ren, S., &amp; Sun, J. (2016). <a href="https://arxiv.org/abs/1512.03385">Deep residual learning for image recognition.</a> In Proceedings of the IEEE conference on computer vision and pattern recognition (pp. 770-778)</p>
 <p>[6]: Heredia, Ignacio. <a href="https://arxiv.org/abs/1706.03736">Large-scale plant classification with deep neural networks.</a> Proceedings of the Computing Frontiers Conference. ACM, 2017.</p>
+            </div>
+            <div class="five columns">
+<div class="row run">
+    <h3>Run locally on your computer</h3>
+    <p>
+		You can run this model directly on your computer, assuming that you
+		have <a title="Docker documentation" href="https://docs.docker.com/">Docker</a>
+		installed, by following these steps:
+    </p>
+    <pre><code>docker pull deephdc/deep-oc-plant-classification-theano
+docker run -ti -p 5000:5000 deephdc/deep-oc-plant-classification-theano</code></pre>
+ 
+    <p>
+        Once running, point your browser to <code>http://127.0.0.1:5000/</code>
+        and you will see the API documentation, where you can test the model
+        functionality, as well as perform other actions (such as training).
+    </p>
+    <p>
+        For more information, refer to the 
+        <a href="https://docs.deep-hybrid-datacloud.eu/en/latest/user/index.html"
+           title="DEEP user documentation">user documentation</a>.
+    </p>
+</div>
+<div class="row run">
+    <h3>Run on our pilot e-Infrastructure</h3>
+    <p>
+        In order to execute this model in our pilot e-Infrastructure you would
+        need to be registered in the 
+        <a href="https://iam.deep-hybrid-datacloud.eu/"
+           title="DEEP Identity and Access Management">DEEP IAM</a>.
+    </p>
+    <h4>Mesos (CPU)</h4>
+    <pre><code>curl -o deep-oc-plant-classification-theano.tosca \
+    https://raw.githubusercontent.com/indigo-dc/tosca-templates/master/deep-oc/deep-oc-plants-mesos-cpu.yml
+orchent deep-oc-plant-classification-theano.tosca ...</code></pre>
+    <p>Once running...</p>
+    <p>
+        For more information, refer to the 
+        <a href="https://docs.deep-hybrid-datacloud.eu/en/latest/user/index.html"
+           title="DEEP user documentation">user documentation</a>.
+    </p>
+</div>
+            </div>
         </div>
     </div>
 </div>

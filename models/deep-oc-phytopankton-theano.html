@@ -103,7 +103,8 @@
     </div>
     <div class="content">
         <div class="row">
-            <p>The deep learning revolution has brought significant advances in a number of
+            <div class="seven  columns">
+                <p>The deep learning revolution has brought significant advances in a number of
 fields [1], primarily linked to image and speech recognition. The
 standardization of image classification tasks like the <a href="http://www.image-net.org/challenges/LSVRC/">ImageNet Large Scale
 Visual Recognition Challenge</a> [2]
@@ -114,6 +115,30 @@ using Lasagne on top of Theano.</p>
 <h3>References</h3>
 <p>[1]: Yann LeCun, Yoshua Bengio, and Geofrey Hinton. <a href="https://www.cs.toronto.edu/~hinton/absps/NatureDeepReview.pdf">Deep learning</a>. Nature, 521(7553):436–444, may 2015.</p>
 <p>[2]: Olga Russakovsky et al. <a href="https://arxiv.org/abs/1409.0575">ImageNet Large Scale Visual Recognition Challenge</a>. International Journal of Computer Vision (IJCV), 115(3):211–252, 2015.</p>
+            </div>
+            <div class="five columns">
+<div class="row run">
+    <h3>Run locally on your computer</h3>
+    <p>
+		You can run this model directly on your computer, assuming that you
+		have <a title="Docker documentation" href="https://docs.docker.com/">Docker</a>
+		installed, by following these steps:
+    </p>
+    <pre><code>docker pull deephdc/deep-oc-phytoplankton-classification
+docker run -ti -p 5000:5000 deephdc/deep-oc-phytoplankton-classification</code></pre>
+ 
+    <p>
+        Once running, point your browser to <code>http://127.0.0.1:5000/</code>
+        and you will see the API documentation, where you can test the model
+        functionality, as well as perform other actions (such as training).
+    </p>
+    <p>
+        For more information, refer to the 
+        <a href="https://docs.deep-hybrid-datacloud.eu/en/latest/user/index.html"
+           title="DEEP user documentation">user documentation</a>.
+    </p>
+</div>
+            </div>
         </div>
     </div>
 </div>

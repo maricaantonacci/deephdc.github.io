@@ -13,32 +13,36 @@ pipeline {
         stage('Fetch repository') {
             steps {
                 checkout scm
+                //git credentialsId: '7fd27872-0efc-42ee-b48c-346a05075dca', url: 'git@github.com:deephdc/deephdc.github.io.git'
             }
         }
 
-        stage('Generate Pelican site') {
-            when {
-                not { branch 'master' }
-                not { branch 'pelican' }
-            }
-            steps {
-                sh 'make html'
-            }
-        }
+        //stage('Generate Pelican site') {
+        //    when {
+        //        not { branch 'master' }
+        //        not { branch 'pelican' }
+        //    }
+        //    steps {
+        //        sh 'make html'
+        //    }
+        //}
 
         stage('Generate and publish Pelican site to Github Pages') {
-            when {
-                anyOf {
-                    branch 'pelican'
-                    branch 'add_jenkinsfile'
-                }
-            }
+            //when {
+            //    anyOf {
+            //        branch 'pelican'
+            //        branch 'add_jenkinsfile'
+            //    }
+            //}
             steps {
-                sh 'make html'
-                sh 'git config user.name "indigobot"'
-                sh 'git config user.email "orviz@cern.ch"'
-                sh 'git fetch origin master:master'
-                sh 'make github'
+                withCredentials([string(credentialsId: "indigobot-github-token",
+                                 variable: "GITHUB_TOKEN")]) {
+                    sh 'make html'
+                    sh 'git fetch origin master:master'
+                    sh 'git remote set-url origin "https://indigobot:${GITHUB_TOKEN}@github.com/deephdc/deephdc.github.io"'
+                    sh 'make publish'
+                    //sh 'make github'
+                }
             }
         }
     }
